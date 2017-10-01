@@ -1,22 +1,27 @@
+/*	Vitor Nagata RA178499
+*	Programa que simula scheduler em tempo real para 
+*
+*
+*/
 #include <stdio.h>
 
 int main() {
   int a[5];
   int n;
-  char vazio =0;
+  char vazio =0;	//caso não haja nenhuma tarefa no ciclo
 
   scanf("%d %d %d %d %d %d", &(a[0]), &(a[1]), &(a[2]), &(a[3]), &(a[4]), &n);
 
-  for (int i=1; i<n+1; i++) {
+  for (int i=1; i<n+1; i++) {	// Ciclos de iteração
 	  
-    for (int j=0; j<5; j++){
+    for (int j=0; j<5; j++){	// Varredura pelas tarefas
 		if(!(i%a[j])){
 			printf("%d", j);
 			vazio = 1;
 		}
 	}
 	
-	if(!(vazio)){
+	if(!(vazio)){		// Não há tarefas nesse ciclo
 		putchar('-');
 	}
 	
