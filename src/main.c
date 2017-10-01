@@ -1,7 +1,6 @@
 /*	Vitor Nagata RA178499
-*	Programa que simula scheduler em tempo real para 
-*
-*
+*	Programa que simula scheduler em tempo 
+*	real para ciclos de temporização
 */
 #include <stdio.h>
 
